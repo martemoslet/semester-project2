@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/martemoslet/semester-project2/issues"
   },
-  "homepage": "https://github.com/martemoslet/semester-project2#readme"
+  "homepage": "https://github.com/martemoslet/semester-project2#readme",
+  "devDependencies": {
+    "prettier": "^2.8.3"
+  }
 }
