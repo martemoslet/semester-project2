@@ -1,2 +1,22 @@
 @import "variables";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+:root {
+  --bs-body-font-family: "DM Sans", Verdana, Tahoma, sans-serif;
+}
+
+.navbar-brand,
+h1,
+h2,
+h3 {
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  color: #eb5359;
+}
+
+li {
+  color: #eb5359;
+}
+
+.fas {
+  font-size: 4rem;
+}
