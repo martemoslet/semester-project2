@@ -1,7 +1,8 @@
-import { setRegisterFormListener } from "./handlers/register.mjs";
-import { setLoginFormListener } from "./handlers/login.mjs";
+import router from "./router.mjs";
 import { logout } from "./handlers/logout.mjs";
+import * as templates from "./templates/index.mjs";
 
-setRegisterFormListener();
-setLoginFormListener();
+import * as listing from "./api/listings/index.mjs";
+
+router();
 logout();
