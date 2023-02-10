@@ -6,15 +6,51 @@
 }
 
 .navbar-brand,
-h1,
-h2,
-h3 {
+h1 {
   font-family: "Poppins", Verdana, Tahoma, sans-serif;
   color: #eb5359;
 }
 
-li {
-  color: #eb5359;
+h2,
+h3 {
+  font-family: "DM Sans", Verdana, Tahoma, sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h3 {
+  color: rgb(58, 58, 58);
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 1000px;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  max-width: 300px;
+  border: none;
+}
+
+.listing-img {
+  height: 250px;
+  object-fit: cover;
+  background-position: center top;
+  border-radius: 5%;
 }
 
 .fas {
