@@ -1,5 +1,5 @@
 import * as listeners from "./handlers/index.mjs";
-import { listingsFeed } from "./handlers/listings.mjs";
+import { oneListing, listingsFeed } from "./handlers/index.mjs";
 
 export default function router() {
   const path = location.pathname;
@@ -17,6 +17,9 @@ export default function router() {
       break;
     case "/index.html":
       listingsFeed();
+      break;
+    case "/listing/":
+      oneListing();
       break;
   }
 }

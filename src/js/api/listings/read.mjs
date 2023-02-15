@@ -18,7 +18,7 @@ export async function getListings() {
 
 /**
  * This function will get a specific listing using its id
- * @param {object} id is the id of the post chosen
+ * @param {object} id is the id of the listing chosen
  */
 
 export async function getListing(id) {
