@@ -14,7 +14,8 @@ const method = "post";
 export async function createListing(listingData) {
   const createListingURL = API_AUCTION_URL + action;
 
-  //listingData.tags = listingData.tags.split(",");
+  listingData.tags = listingData.tags.split(",");
+  listingData.media = listingData.media.split(",");
 
   const response = await authFetch(createListingURL, {
     method,

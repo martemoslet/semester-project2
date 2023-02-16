@@ -65,6 +65,42 @@
           >
         </div>
       </div>
+      <div>
+        <form class="col-10 col-sm-8 col-md-12 col-lg-8" id="createListing">
+          <div class="form-group">
+            <label for="">Title</label>
+            <input class="form-control" type="text" name="title" required />
+          </div>
+
+          <div class="form-group">
+            <label for="">Description</label>
+            <textarea class="form-control" name="description"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="">Auction ends at</label>
+            <input class="form-control" type="date" name="endsAt" required />
+          </div>
+
+          <div class="form-group">
+            <label for="">Tags</label>
+            <textarea class="form-control" type="text" name="tags"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="">Media</label>
+            <textarea class="form-control" type="text" name="media"></textarea>
+          </div>
+
+          <button class="btn btn-outline-secondary mt-2">Create listing</button>
+        </form>
+      </div>
+      <div>
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center"
+          id="yourListings"
+        ></div>
+      </div>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
