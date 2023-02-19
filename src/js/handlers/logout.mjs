@@ -7,6 +7,7 @@ export function logout() {
     logoutbtn.addEventListener("click", (event) => {
       event.preventDefault();
       remove("token");
+      remove("profile");
       location.href = "/index.html";
     });
   }
