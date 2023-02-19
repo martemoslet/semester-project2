@@ -21,5 +21,8 @@ export default function router() {
     case "/listing/":
       oneListing();
       break;
+    case "/profile/":
+      listeners.setCreateListingFormListener();
+      break;
   }
 }
