@@ -1,4 +1,4 @@
-import { API_AUCTION_URL } from "../constants.mjs";
+import { API_AUCTION_URL, LISTINGS } from "../constants.mjs";
 import { authFetch } from "../authFetch.mjs";
 
 const action = "/profiles";
@@ -24,11 +24,24 @@ export async function getProfile(name) {
   if (!name) {
     throw new Error("Get profile requires a name");
   }
-  const getProfileURL = `${API_AUCTION_URL}${action}/${name}`;
+  const getProfileURL = `${API_AUCTION_URL}${action}/${name}/${LISTINGS}`;
 
   const response = await authFetch(getProfileURL);
 
   const userProfile = await response.json();
 
   return userProfile;
+}
+
+export async function getYourListings(name) {
+  if (!name) {
+    throw new Error("Get listings requires a name");
+  }
+  const getYourListingsURL = `${API_AUCTION_URL}${action}/${name}/${LISTINGS}`;
+
+  const response = await authFetch(getYourListingsURL);
+
+  const userFeed = await response.json();
+
+  return userFeed;
 }
