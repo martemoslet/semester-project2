@@ -7,7 +7,10 @@ import { missingImg } from "../api/constants.mjs";
  * @returns
  */
 
+import { load } from "../storage/index.mjs";
+
 export function singleListingContainer(listingData) {
+  const { name } = load("profile");
   return `
      <div class="container col-12 col-md-7 col-lg-6 mt-3 mb-3">
      <div class="thumbnail">
@@ -30,5 +33,12 @@ export function singleListingContainer(listingData) {
          ? `<p class="">Bidding price: ${listingData.bids[0].amount}</p>`
          : ""
      }</div>
+     <div>
+     ${
+       listingData.seller.name === name
+         ? `<a class="btn btn-sm btn-primary" id="edit-btn" href="/listing/update/?id=${listingData.id}">Edit</a>`
+         : ""
+     }
+     </div>
  </div>`;
 }

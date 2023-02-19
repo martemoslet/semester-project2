@@ -21,6 +21,9 @@ export default function router() {
     case "/listing/":
       oneListing();
       break;
+    case "/listing/update/":
+      listeners.setUpdateListingListener();
+      break;
     case "/profile/":
       listeners.setCreateListingFormListener();
       break;
