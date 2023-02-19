@@ -1,4 +1,4 @@
-import { API_AUCTION_URL } from "../constants.mjs";
+import { API_AUCTION_URL, SORT_LISTINGS, SELLER, BIDS } from "../constants.mjs";
 
 import { authFetch } from "../authFetch.mjs";
 
@@ -9,7 +9,7 @@ const action = "/listings";
  */
 
 export async function getListings() {
-  const updateListingURL = `${API_AUCTION_URL}${action}`;
+  const updateListingURL = `${API_AUCTION_URL}${action}${SORT_LISTINGS}`;
 
   const response = await authFetch(updateListingURL);
 
@@ -25,7 +25,7 @@ export async function getListing(id) {
   if (!id) {
     throw new Error("Get a listing requires a listingID");
   }
-  const getListingURL = `${API_AUCTION_URL}${action}/${id}`;
+  const getListingURL = `${API_AUCTION_URL}${action}/${id}${SELLER}&${BIDS}`;
 
   const response = await authFetch(getListingURL);
 
