@@ -25,6 +25,10 @@ export default function router() {
       listeners.setUpdateListingListener();
       listeners.setRemoveListingListener();
       break;
+    case "/listing/bid/":
+      oneListing();
+      listeners.bidOnListingListener();
+      break;
     case "/profile/":
       listeners.setCreateListingFormListener();
       break;
