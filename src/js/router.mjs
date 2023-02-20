@@ -23,6 +23,7 @@ export default function router() {
       break;
     case "/listing/update/":
       listeners.setUpdateListingListener();
+      listeners.setRemoveListingListener();
       break;
     case "/profile/":
       listeners.setCreateListingFormListener();
