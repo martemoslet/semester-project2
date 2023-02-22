@@ -1,5 +1,6 @@
 import * as listeners from "./handlers/index.mjs";
 import { oneListing, listingsFeed } from "./handlers/index.mjs";
+import { listingsFeedFrontPage } from "./templates/frontpage/listingsHandler.mjs";
 
 export default function router() {
   const path = location.pathname;
@@ -7,6 +8,7 @@ export default function router() {
   switch (path) {
     case "/profile/login/":
     case "/profile/login/index.html":
+    case "/listing/login/":
       listeners.setLoginFormListener();
       break;
     case "/profile/register/":
@@ -16,6 +18,10 @@ export default function router() {
       listeners.setUpdateProfileListener();
       break;
     case "/index.html":
+      listingsFeedFrontPage();
+      break;
+    case "/home/":
+    case "/home/index.html":
       listingsFeed();
       break;
     case "/listing/":
