@@ -13,7 +13,7 @@ export function listingsContainer(listingData) {
     <a href="/listing/?id=${listingData.id}">
         <div class="">
 
-        <div class="card">
+        <div class="card bg-secondary">
             <img class="listing-img" src="${listingData.media}" alt="${listingData.title}" onerror="this.onerror=null; this.src='${missingImg}'" width="100%" />
             <div class="card-body">
             <h3 class="card-title">${listingData.title}</h3>
