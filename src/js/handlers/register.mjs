@@ -14,7 +14,7 @@ export function setRegisterFormListener() {
       const formData = new FormData(form);
       const profile = Object.fromEntries(formData.entries());
       await register(profile);
-      location.href = "/index.html";
+      location.href = "/home/";
     });
   }
 }

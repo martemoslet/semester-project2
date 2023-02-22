@@ -15,7 +15,7 @@ export function setLoginFormListener() {
       const formData = new FormData(form);
       const profile = Object.fromEntries(formData.entries());
       await login(profile);
-      location.href = "/index.html";
+      location.href = "/home/";
     });
   }
 }
