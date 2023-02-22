@@ -15,6 +15,7 @@ export function setCreateListingFormListener() {
       const formData = new FormData(form);
       const listing = Object.fromEntries(formData.entries());
       await createListing(listing);
+      location.href = "/home/";
     });
   }
 }
