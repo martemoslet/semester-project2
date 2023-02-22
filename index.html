@@ -20,8 +20,8 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-light bg-primary ps-3 pe-3">
-        <a class="navbar-brand mb-0 h1" href="/index.html"
+      <nav class="navbar navbar-expand-md navbar-light bg-secondary ps-3 pe-3">
+        <a class="navbar-brand mb-0 h1" href="index.html"
           >Fashion Auction Online</a
         >
         <button
@@ -46,24 +46,17 @@
             <li class="nav-item">
               <a href="/profile/register/" class="nav-link">Register</a>
             </li>
-            <li class="nav-item">
-              <a href="/profile/" class="nav-link">Profile</a>
-            </li>
-          </ul>
-          <a class="btn btn-outline-secondary ms-md-3" id="logout">Log out</a>
-        </div>
+          </div>
       </nav>
     </header>
-    <main>
-      <container
-        class="col-sm-10 col-md-8 col-lg-8 mt-4 container-fluid d-flex"
-      >
-        <div class="row">
-          <h1 class="col-8">Welcome to Fashion Auction Online</h1>
-          <h2 class="col-8">Log in to make a bid or create a listing</h2>
+    <main class="mainpage">
+        <div class="col-12 pt-4 mb-4">
+          <div class="col text-center">
+            <h1 class="">Welcome to Fashion Auction Online</h1>
+            <h2 class=""><a href="/profile/login/" class="">Log in</a> to place a bid or create a listing</h2>
+          </div>
         </div>
-      </container>
-      <div class="container">
+        <div class="container">
         <div
           class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center"
           id="listingsContainer"

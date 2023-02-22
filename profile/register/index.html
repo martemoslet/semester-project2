@@ -20,7 +20,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-light bg-primary ps-3 pe-3">
+      <nav class="navbar navbar-expand-md navbar-light bg-secondary ps-3 pe-3">
         <a class="navbar-brand mb-0 h1" href="/index.html"
           >Fashion Auction Online</a
         >
@@ -38,22 +38,21 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="" class="nav-link">Browse</a>
+              <a href="/index.html" class="nav-link">Browse</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Login</a>
+              <a href="/profile/login/" class="nav-link">Login</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <div class="container-fluid">
-        <div class="col d-flex justify-content-center">
-          <div class="col">
-            <form class="col-10 col-sm-8 col-md-6 col-lg-4" id="registerForm">
+      <h1 class="text-center pt-3">Create account</h1>
+      <div class="container d-flex justify-content-centerd">
+            <form class="col-10 col-sm-8 col-md-6 col-lg-4 mt-2" id="registerForm">
               <div class="form-group">
-                <label for="">Name</label>
+                <label for=""></label>
                 <input
                   class="form-control"
                   type="text"
@@ -61,10 +60,11 @@
                   required
                   pattern="^[\w]+$"
                   title="User name can only contain lower and upper case letters, numbers and underscore (_)"
+                  placeholder="Name"
                 />
               </div>
               <div class="form-group">
-                <label for="">Email</label>
+                <label for=""></label>
                 <input
                   class="form-control"
                   type="email"
@@ -72,26 +72,26 @@
                   required
                   pattern="^[\w\-.]+@(stud.)?noroff.no$"
                   title="Only @(stud.)noroff.no domains can register."
+                  placeholder="Email address"
                 />
               </div>
               <div class="form-group">
-                <label for="">Password</label>
+                <label for=""></label>
                 <input
                   class="form-control"
                   type="password"
                   name="password"
                   required
                   minlength="8"
+                  placeholder="Password"
                 />
               </div>
               <div class="form-group">
-                <label for="">Avatar</label>
-                <input class="form-control" type="url" name="avatar" />
+                <label for=""></label>
+                <input class="form-control" type="url" name="avatar" placeholder="Avatar" />
               </div>
-              <button class="btn btn-outline-secondary mt-2">Register</button>
+              <button class="btn btn-primary mt-3 btn-color">Register</button>
             </form>
-          </div>
-        </div>
       </div>
     </main>
     <script

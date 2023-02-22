@@ -20,7 +20,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-light bg-primary ps-3 pe-3">
+      <nav class="navbar navbar-expand-md navbar-light bg-secondary ps-3 pe-3">
         <a class="navbar-brand mb-0 h1" href="/index.html"
           >Fashion Auction Online</a
         >
@@ -41,19 +41,18 @@
               <a href="" class="nav-link">Browse</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Login</a>
+              <a href="/profile/register/" class="nav-link">Register</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <div class="container-fluid">
-        <div class="col d-flex justify-content-center">
-          <div class="col">
-            <form class="col-10 col-sm-8 col-md-6 col-lg-4" id="loginForm">
+      <h1 class="text-center mt-3">Log in to your account</h1>
+        <div class="container d-flex justify-content-center">
+            <form class="col-10 col-sm-8 col-md-6 col-lg-4 mt-2" id="loginForm">
               <div class="form-group">
-                <label for="">Email</label>
+                <label for=""></label>
                 <input
                   class="form-control"
                   type="email"
@@ -61,24 +60,31 @@
                   required
                   pattern="^[\w\-.]+@(stud.)?noroff.no$"
                   title="Only @(stud.)noroff.no domains can register."
+                  placeholder="Email address"
                 />
               </div>
               <div class="form-group">
-                <label for="">Password</label>
+                <label for=""></label>
                 <input
                   class="form-control"
                   type="password"
                   name="password"
                   required
                   minlength="8"
+                  placeholder="Password"
                 />
               </div>
 
-              <button class="btn btn-outline-secondary mt-2">Login</button>
+              <button class="btn btn-primary mt-3 btn-color">Login</button>
             </form>
+
+            
           </div>
-        </div>
-      </div>
+          <h2 class="text-center mt-4">Don't have an account yet?</h2>
+          <div class="d-flex justify-content-center">
+            <a href="/profile/register/" class="btn btn-success btn-lg btn-block mt-3 col-8 col-sm-6 col-md-3 btn-color">Register</a>
+          </div>
+          
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
