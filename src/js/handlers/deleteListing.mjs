@@ -13,6 +13,7 @@ export function setRemoveListingListener() {
 
   if (button) {
     button.addEventListener("click", async (event) => {
+      event.preventDefault();
       alert("Listing deleted");
       await removeListing(id);
       location.href = "/profile/";
