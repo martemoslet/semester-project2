@@ -22,8 +22,7 @@ export function listingsContainer(listingData) {
             <img class="listing-img" src="${listingData.media}" alt="${listingData.title}" onerror="this.onerror=null; this.src='${missingImg}'" width="100%" />
             <div class="card-body">
             <h3 class="card-title">${listingData.title}</h3>
-            <p class="card-text">Auction ends: ${convertDate}</p>
-            <p class="">Bids: ${listingData._count.bids}</p>
+            <p class="card-text">Bids: ${listingData._count.bids}<br>Auction ends: ${convertDate}</p>
             </div>
             </div>
 
