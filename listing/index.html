@@ -50,6 +50,47 @@
     </header>
     <main>
       <div id="listing"></div>
+      <div class="container justify-content-center">
+        <div id="bid-container" class="card pt-2">
+          <div class="text-center"><h2>Bids on this listing</h2></div>
+        </div>
+        <form
+        class="container justify-content-center mt-4 pb-4 mb-4"
+        id="bidOnListing"
+      >
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="hidden"
+            name="id"
+            disabled
+            required
+          />
+        </div>
+  
+        <div class="form-group">
+          <label for="amount"></label>
+          <input
+            class="form-control"
+            type="number"
+            name="amount"
+            id="bidAmount"
+            min="1"
+            placeholder="Place a bid"
+          />
+        </div>
+  
+        <button
+          type="submit"
+          id="bid-button"
+          class="btn btn-success btn-color mt-4 ms-2"
+        >
+          Bid on item
+        </button>
+      </form>
+      </div>
+
+
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
