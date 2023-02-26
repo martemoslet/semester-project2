@@ -1,6 +1,7 @@
 import * as listeners from "./handlers/index.mjs";
 import { oneListing, listingsFeed } from "./handlers/index.mjs";
 import { listingsFeedFrontPage } from "./templates/frontpage/listingsHandler.mjs";
+import { seeBids } from "./templates/bids.mjs";
 
 export default function router() {
   const path = location.pathname;
@@ -26,14 +27,16 @@ export default function router() {
       break;
     case "/listing/":
       oneListing();
+      listeners.bidOnListingListener();
+      listeners.seeBids();
       break;
     case "/listing/update/":
       listeners.setUpdateListingListener();
       listeners.setRemoveListingListener();
       break;
     case "/listing/bid/":
-      oneListing();
       listeners.bidOnListingListener();
+      listeners.seeBids();
       break;
     case "/profile/":
       listeners.setCreateListingFormListener();
