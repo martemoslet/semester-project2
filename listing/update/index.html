@@ -20,8 +20,8 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-light bg-primary ps-3 pe-3">
-        <a class="navbar-brand mb-0 h1" href="/index.html"
+      <nav class="navbar navbar-expand-md navbar-light bg-secondary ps-3 pe-3">
+        <a class="navbar-brand mb-0 h1" href="/home/"
           >Fashion Auction Online</a
         >
         <button
@@ -38,35 +38,31 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="" class="nav-link">Browse</a>
-            </li>
-            <li class="nav-item">
-              <a href="/profile/login/" class="nav-link">Login</a>
-            </li>
-            <li class="nav-item">
-              <a href="/profile/register/" class="nav-link">Register</a>
+              <a href="/home/" class="nav-link">Browse</a>
             </li>
             <li class="nav-item">
               <a href="/profile/" class="nav-link">Profile</a>
             </li>
           </ul>
-          <a class="btn btn-outline-secondary ms-md-3" id="logout">Log out</a>
+          <a class="btn btn-outline-primary ms-md-3" id="logout">Log out</a>
         </div>
       </nav>
     </header>
     <main>
-      <form
-        class="container col-10 col-sm-8 col-md-6 col-lg-4 justify-content-center"
+      <h1 class="text-center mt-3">Edit listing</h1>
+      <div class="container d-flex justify-content-center">
+        <form
+        class="col-10 col-sm-8 col-md-6 col-lg-4 mt-2"
         id="editListing"
       >
         <div class="form-group">
-          <label for="">Title</label>
-          <input class="form-control" type="text" name="title" />
+          <label for=""></label>
+          <input class="form-control" type="text" name="title" placeholder="Title" />
         </div>
 
         <div class="form-group">
-          <label for="">Description</label>
-          <textarea class="form-control" name="description"></textarea>
+          <label for=""></label>
+          <textarea class="form-control" name="description" placeholder="Description"></textarea>
         </div>
 
         <div class="form-group">
@@ -74,26 +70,28 @@
         </div>
 
         <div class="form-group">
-          <label for="">Tags</label>
-          <textarea class="form-control" type="text" name="tags"></textarea>
+          <label for=""></label>
+          <textarea class="form-control" type="text" name="tags" placeholder="Tags"></textarea>
         </div>
 
         <div class="form-group">
-          <label for="">Media</label>
-          <textarea class="form-control" type="url" name="media"></textarea>
+          <label for=""></label>
+          <textarea class="form-control" type="url" name="media" placeholder="Media"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-outline-secondary mt-3 btn-sm">
+        <button type="submit" class="btn btn-danger btn-color mt-3">
           Update listing
         </button>
         <button
           type="button"
           id="delete-button"
-          class="btn btn-primary mt-3 btn-sm"
+          class="btn btn-success btn-color mt-3"
         >
           Delete listing
         </button>
       </form>
+      </div>
+      
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
