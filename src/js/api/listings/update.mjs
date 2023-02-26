@@ -24,6 +24,11 @@ export async function updateListing(listingData) {
     method,
     body: JSON.stringify(listingData),
   });
-
-  return await response.json();
+  if (response.status === 200 || 204) {
+    alert("Listing updated");
+    location.href = "/home/";
+    return await response.json();
+  } else {
+    alert("Something went wrong");
+  }
 }

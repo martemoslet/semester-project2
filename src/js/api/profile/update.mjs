@@ -21,6 +21,11 @@ export async function updateProfile(profileData) {
     method,
     body: JSON.stringify(profileData),
   });
-
-  return await response.json();
+  if (response.status === 200 || 204) {
+    alert("Avatar updated");
+    location.href = "/profile/";
+    return await response.json();
+  } else {
+    alert("Something went wrong");
+  }
 }

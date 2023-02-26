@@ -20,6 +20,12 @@ export async function removeListing(id) {
   const response = await authFetch(removeListingURL, {
     method,
   });
-  console.log(removeListingURL);
-  return await response.json();
+  if (response.status === 200 || 204) {
+    alert("Listing deleted");
+    location.href = "/profile/";
+    console.log(removeListingURL);
+    return await response.json();
+  } else {
+    alert("Something went wrong");
+  }
 }
