@@ -24,6 +24,14 @@ export async function bidOnListing(listingData) {
       amount: bidAmount.valueAsNumber,
     }),
   });
-
-  return await response.json();
+  if (response.status === 200) {
+    alert("Bid placed");
+    document.location.reload();
+    return await response.json();
+  }
+  if (response.status === 403) {
+    alert("You cannot bid on your own listing");
+  } else {
+    alert("Something went wrong");
+  }
 }

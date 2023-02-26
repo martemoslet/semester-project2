@@ -12,7 +12,6 @@ const method = "post";
 export async function login(profile) {
   const loginURL = API_AUCTION_URL + action;
   const body = JSON.stringify(profile);
-
   const response = await fetch(loginURL, {
     headers: {
       "Content-Type": "application/json",
@@ -20,11 +19,18 @@ export async function login(profile) {
     method,
     body,
   });
+
   const { accessToken, ...user } = await response.json();
 
   storage.save("token", accessToken);
 
   storage.save("profile", user);
-
-  alert("You are now logged in");
+  if (response.status === 200) {
+    alert("You are now logged in");
+    location.href = "/home/";
+  } else {
+    alert("Wrong email or password");
+    storage.remove("token");
+    storage.remove("profile");
+  }
 }
