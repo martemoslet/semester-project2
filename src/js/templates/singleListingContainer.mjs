@@ -21,7 +21,7 @@ export function singleListingContainer(listingData) {
      <div class="container col-12 col-md-7 col-lg-6 mt-3 mb-3">
      <div class="thumbnail">
          <div class="card">
-            <div class="card-header"><img class="seller-img me-2" src="${
+            <div class="card-header bg-white"><img class="seller-img me-2" src="${
               listingData.seller.avatar
             }" alt="${
     listingData.title
@@ -34,11 +34,11 @@ export function singleListingContainer(listingData) {
              <div class="card-body">
                  <h2 class="card-title">${listingData.title}</h2>
                  <p class="card-text">${listingData.description}</p>
-                 <p class="card-text">Auction ends at: ${convertDate}, ${convertTime}</p>
+                 <p class="card-text">Auction ends at: <strong>${convertDate}, ${convertTime}</strong></p>
          </div>
 
          <div class="p-3">
-         <p class="">Bids: ${listingData._count.bids}</p>
+         
 
          <div class="col">
         ${
