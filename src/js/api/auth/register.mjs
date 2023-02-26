@@ -1,4 +1,5 @@
 import { API_AUCTION_URL } from "../constants.mjs";
+import { login } from "./login.mjs";
 
 /**
  * This will register the user
@@ -19,8 +20,12 @@ export async function register(profile) {
     method,
     body,
   });
-
   const result = await response.json();
-  alert("Registration successful");
-  return result;
+  if (response.status === 201 || 204) {
+    alert("Registration successful");
+    login(profile);
+    return result;
+  } else {
+    alert("Something went wrong");
+  }
 }
