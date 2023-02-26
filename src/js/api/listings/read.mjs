@@ -1,4 +1,10 @@
-import { API_AUCTION_URL, SORT_LISTINGS, SELLER, BIDS } from "../constants.mjs";
+import {
+  API_AUCTION_URL,
+  SORT_LISTINGS,
+  SELLER,
+  BIDS,
+  TAG,
+} from "../constants.mjs";
 
 import { authFetch } from "../authFetch.mjs";
 
@@ -9,7 +15,7 @@ const action = "/listings";
  */
 
 export async function getListings() {
-  const updateListingURL = `${API_AUCTION_URL}${action}${SORT_LISTINGS}`;
+  const updateListingURL = `${API_AUCTION_URL}${action}${SORT_LISTINGS}&${TAG}`;
 
   const response = await authFetch(updateListingURL);
 
