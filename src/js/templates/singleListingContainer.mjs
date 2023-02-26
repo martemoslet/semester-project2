@@ -9,6 +9,14 @@ import { missingImg } from "../api/constants.mjs";
 import { load } from "../storage/index.mjs";
 export function singleListingContainer(listingData) {
   const { name } = load("profile");
+  const convertDate = new Date(listingData.endsAt).toLocaleDateString("en-us", {
+    month: "short",
+    day: "numeric",
+  });
+  const convertTime = new Date(listingData.endsAt).toLocaleTimeString("en-GB", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
   return `
      <div class="container col-12 col-md-7 col-lg-6 mt-3 mb-3">
      <div class="thumbnail">
@@ -20,25 +28,17 @@ export function singleListingContainer(listingData) {
   }" onerror="this.onerror=null; this.src='${missingImg}'" />${
     listingData.seller.name
   }</div>
-             <img class="" src="${listingData.media}" alt="${
+             <img class="single-listing-img" src="${listingData.media}" alt="${
     listingData.title
   }" onerror="this.onerror=null; this.src='${missingImg}'" />
              <div class="card-body">
                  <h2 class="card-title">${listingData.title}</h2>
                  <p class="card-text">${listingData.description}</p>
-                 <p class="card-text">Auction ends at: ${listingData.endsAt}</p>
+                 <p class="card-text">Auction ends at: ${convertDate}, ${convertTime}</p>
          </div>
 
          <div class="p-3">
          <p class="">Bids: ${listingData._count.bids}</p>
- 
-         <div class="col p-3">
-         ${
-           listingData.seller.name !== name
-             ? `<a class="btn btn-success btn-color d-flex justify-content-center" id="bid-btn" href="/listing/bid/?id=${listingData.id}">Bit on item</a>`
-             : ""
-         }
-        </div>
 
          <div class="col">
         ${
