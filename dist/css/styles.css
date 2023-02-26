@@ -10808,7 +10808,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  max-width: 300px;
+  max-width: 450px;
   border: none;
 }
 
@@ -10850,6 +10850,10 @@ textarea {
   width: 40px;
   height: 40px;
   object-fit: cover;
+}
+
+.bid-form {
+  max-width: 450px;
 }
 
 /*# sourceMappingURL=styles.css.map */
