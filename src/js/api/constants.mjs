@@ -3,6 +3,7 @@ export const API_BASE = "/api/v1";
 export const API_AUCTION_BASE = "/auction";
 export const API_AUCTION_URL = `${API_HOST_URL}${API_BASE}${API_AUCTION_BASE}`;
 export const SORT_LISTINGS = "?sort=created&sortOrder=desc";
+export const TAG = "_tag=fashion";
 export const SELLER = "?_seller=true";
 export const BIDS = "_bids=true";
 export const LISTINGS = "?_listings=true";
