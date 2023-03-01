@@ -18,9 +18,7 @@ export async function bidOnListingListener() {
       const formData = new FormData(form);
       const listing = Object.fromEntries(formData.entries());
       listing.id = id;
-      alert("Bid placed");
       await bidOnListing(listing);
-      //location.href = "/index.html";
     });
   }
 }

@@ -32,9 +32,7 @@ export async function setUpdateProfileListener() {
 
       profile.name = name;
       profile.email = email;
-      alert("Profile updated");
       await updateProfile(profile);
-      location.href = "/profile/";
     });
   }
 }

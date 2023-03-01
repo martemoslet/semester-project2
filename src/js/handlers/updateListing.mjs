@@ -32,9 +32,7 @@ export async function setUpdateListingListener() {
       const formData = new FormData(form);
       const listing = Object.fromEntries(formData.entries());
       listing.id = id;
-      alert("Listing updated");
       await updateListing(listing);
-      location.href = "/index.html";
     });
   }
 }
