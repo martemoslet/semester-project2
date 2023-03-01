@@ -6,8 +6,6 @@ import * as templates from "./templates/index.mjs";
 
 const profile = storage.load("profile");
 
-router();
-
 async function userProfile() {
   const userName = await getProfile(`${profile.name}`);
   templates.userProfileTemplate(userName);
@@ -15,3 +13,5 @@ async function userProfile() {
 userProfile();
 
 logout();
+
+router();
