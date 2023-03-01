@@ -21,10 +21,13 @@ export async function createListing(listingData) {
     method,
     body: JSON.stringify(listingData),
   });
-  if (response.status === 200 || 204) {
+  if (response.status === 201) {
     alert("Listing created");
     location.href = "/home/";
     return await response.json();
+  }
+  if (response.status === 400) {
+    alert("Something went wrong");
   } else {
     alert("Something went wrong");
   }
