@@ -39,4 +39,7 @@ npm run start/watch
 ```
 
 ### Testing
-- Manual user test
+
+```bash
+Manual user test
+```
