@@ -10,19 +10,13 @@ import { missingImg } from "../../api/constants.mjs";
 export function listingsContainer(listingData) {
   return `
     <div class="pt-3">
-    <a href="/listing/login/">
-        <div class="">
-
-        <div class="card bg-secondary">
-            <img class="listing-img" src="${listingData.media}" alt="${listingData.title}" onerror="this.onerror=null; this.src='${missingImg}'" width="100%" />
-            <div class="card-body">
-            <h3 class="card-title">${listingData.title}</h3>
-
+        <a href="/listing/login/">
+            <div class="card bg-secondary">
+                <img class="listing-img" src="${listingData.media}" alt="${listingData.title}" onerror="this.onerror=null; this.src='${missingImg}'" width="100%" />
+                <div class="card-body">
+                <h3 class="card-title">${listingData.title}</h3>
+                </div>
             </div>
-            </div>
-
-
-        </div>
-
-    </a></div>`;
+         </a>
+    </div>`;
 }

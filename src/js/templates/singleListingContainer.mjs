@@ -19,7 +19,7 @@ export function singleListingContainer(listingData) {
   });
   return `
      <div class="container col-12 col-md-7 col-lg-6 mt-3 mb-3">
-     <div class="thumbnail">
+      <div class="thumbnail">
          <div class="card">
             <div class="card-header bg-white"><img class="seller-img me-2" src="${
               listingData.seller.avatar
@@ -28,18 +28,15 @@ export function singleListingContainer(listingData) {
   }" onerror="this.onerror=null; this.src='${missingImg}'" />${
     listingData.seller.name
   }</div>
-             <img class="single-listing-img" src="${listingData.media}" alt="${
+            <img class="single-listing-img" src="${listingData.media}" alt="${
     listingData.title
   }" onerror="this.onerror=null; this.src='${missingImg}'" />
              <div class="card-body">
-                 <h2 class="card-title">${listingData.title}</h2>
-                 <p class="card-text">${listingData.description}</p>
-                 <p class="card-text">Auction ends at: <strong>${convertDate}, ${convertTime}</strong></p>
-         </div>
-
+                <h2 class="card-title">${listingData.title}</h2>
+                <p class="card-text">${listingData.description}</p>
+               <p class="card-text">Auction ends at: <strong>${convertDate}, ${convertTime}</strong></p>
+              </div>
          <div class="p-3">
-         
-
          <div class="col">
         ${
           listingData.seller.name === name
@@ -47,12 +44,6 @@ export function singleListingContainer(listingData) {
             : ""
         }
         </div>
-        
-
-
      </div>
-     
-
-     
- </div>`;
+   </div>`;
 }
