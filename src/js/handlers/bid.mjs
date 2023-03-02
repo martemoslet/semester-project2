@@ -1,4 +1,4 @@
-import { getListing, bidOnListing } from "../api/listings/index.mjs";
+import { bidOnListing } from "../api/listings/index.mjs";
 
 /**
  * This function will place a bid on a specific listing using its id.
