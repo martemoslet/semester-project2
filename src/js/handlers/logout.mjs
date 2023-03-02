@@ -1,5 +1,10 @@
 import { remove } from "../storage/index.mjs";
 
+/**
+ * This will log the user out of the site
+ * using addEventListener on the button
+ */
+
 export function logout() {
   const logoutbtn = document.querySelector("#logout");
 
