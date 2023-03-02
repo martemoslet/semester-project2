@@ -1,0 +1,54 @@
+{
+  "name": "semester-project2",
+  "version": "0.0.5",
+  "description": "Auction website",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**/*.js",
+    "prepare": "husky install",
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css & live-server",
+    "start": "npm run build && live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martemoslet/semester-project2.git"
+  },
+  "keywords": [
+    "css",
+    "auction",
+    "website",
+    "bootstrap",
+    "javascript"
+  ],
+  "author": "Marte Moslet <marte.moslet@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martemoslet/semester-project2/issues"
+  },
+  "homepage": "https://github.com/martemoslet/semester-project2#readme",
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.1",
+    "live-server": "^1.2.2",
+    "prettier": "^2.8.3",
+    "sass": "^1.58.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.html": [
+      "prettier --write"
+    ],
+    "*.scss": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}

@@ -1,0 +1,109 @@
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+:root {
+  --bs-body-font-family: "DM Sans", Verdana, Tahoma, sans-serif;
+}
+
+.navbar-brand,
+h1 {
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  color: $primary;
+}
+
+h2,
+h3 {
+  font-family: "DM Sans", Verdana, Tahoma, sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h2,
+h3 {
+  color: rgb(58, 58, 58);
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+body {
+  background-color: $secondary;
+}
+
+.container {
+  max-width: 1000px;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  max-width: 450px;
+  border: none;
+}
+
+.listing-img {
+  height: 250px;
+  object-fit: cover;
+  background-position: center top;
+  border-radius: 10%;
+}
+
+.fas {
+  font-size: 4rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: solid 3px #fff;
+}
+
+.profile-text {
+  background-color: #fff;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10%;
+}
+
+input,
+textarea {
+  border: none transparent !important;
+}
+
+.logout-btn-color {
+  color: #fff !important;
+}
+
+.seller-img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.bid-form {
+  max-width: 450px;
+}
+
+.bid-amount {
+  background: $success;
+  border-radius: 1.7em;
+  -moz-border-radius: 1.7em;
+  -webkit-border-radius: 1.7em;
+  color: #000;
+  display: inline-block;
+  line-height: 2.6em;
+  text-align: center;
+  width: 2.6em; 
+}
