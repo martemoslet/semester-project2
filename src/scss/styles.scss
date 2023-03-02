@@ -8,7 +8,7 @@
 .navbar-brand,
 h1 {
   font-family: "Poppins", Verdana, Tahoma, sans-serif;
-  color: #eb5359;
+  color: $primary;
 }
 
 h2,
@@ -67,6 +67,7 @@ body {
   width: 150px;
   height: 150px;
   object-fit: cover;
+  border: solid 3px #fff;
 }
 
 .profile-text {
@@ -80,7 +81,7 @@ textarea {
   border: none transparent !important;
 }
 
-.btn-color {
+.logout-btn-color {
   color: #fff !important;
 }
 
@@ -93,4 +94,16 @@ textarea {
 
 .bid-form {
   max-width: 450px;
+}
+
+.bid-amount {
+  background: $success;
+  border-radius: 1.7em;
+  -moz-border-radius: 1.7em;
+  -webkit-border-radius: 1.7em;
+  color: #000;
+  display: inline-block;
+  line-height: 2.6em;
+  text-align: center;
+  width: 2.6em; 
 }
