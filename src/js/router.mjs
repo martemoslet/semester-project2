@@ -36,6 +36,7 @@ export default function router() {
       break;
     case "/profile/":
       listeners.setCreateListingFormListener();
+      listeners.userProfile();
       break;
   }
 }
