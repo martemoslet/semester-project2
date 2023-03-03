@@ -15,7 +15,7 @@ export function listingsContainer(listingData) {
 
   return `
     <div class="pt-3">
-      <a href="/listing/?id=${listingData.id}">
+      <a href="/listing/login/">
         <div class="card bg-secondary">
           <img class="listing-img" src="${listingData.media}" alt="${listingData.title}" onerror="this.onerror=null; this.src='${missingImg}'" width="100%" />
            <div class="card-body">
