@@ -22,7 +22,7 @@ export async function removeListing(id) {
   });
   if (response.status === 200 || 204) {
     alert("Listing deleted");
-    location.href = "/profile/";
+    location.href = "/home/";
     console.log(removeListingURL);
     return await response.json();
   } else {
