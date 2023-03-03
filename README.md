@@ -1,6 +1,6 @@
 # Semester Project 2
 
-https://martemoslet.github.io/
+https://auction.martemoslet.one/
 
 ## Built with
 
@@ -17,7 +17,7 @@ https://martemoslet.github.io/
 1. Clone the repo:
 
 ```bash
-git clone --branch workflow https://github.com/martemoslet/
+git clone https://github.com/martemoslet/semester-project2.git
 ```
 
 2. Install the dependencies:
