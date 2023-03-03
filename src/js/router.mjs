@@ -16,6 +16,9 @@ export default function router() {
     case "/profile/edit/":
       listeners.setUpdateProfileListener();
       break;
+    case "/":
+      listingsFeed();
+      break;
     case "/index.html":
       listingsFeed();
       break;
