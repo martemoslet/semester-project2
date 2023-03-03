@@ -5,7 +5,6 @@ export * from "./updateProfile.mjs";
 export * from "./listing.mjs";
 export * from "./listings.mjs";
 export * from "./createListing.mjs";
-export * from "./profileFeed.mjs";
 export * from "./updateListing.mjs";
 export * from "./deleteListing.mjs";
 export * from "./bid.mjs";
