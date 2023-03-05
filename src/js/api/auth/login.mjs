@@ -26,7 +26,6 @@ export async function login(profile) {
 
   storage.save("profile", user);
   if (response.status === 200) {
-    alert("You are now logged in");
     location.href = "/home/";
   } else {
     alert("Wrong email or password");
