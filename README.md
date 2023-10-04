@@ -2,6 +2,8 @@
 
 https://auction.martemoslet.one/
 
+<img width="1439" alt="Skjermbilde 2023-10-04 kl  20 40 03" src="https://github.com/martemoslet/semester-project2/assets/95755829/bc2f0a24-3255-4191-9fea-576b386533a1">
+
 The goal of this project is to take the skills learned over the past three semesters and create an auction website.
 
 ## Description
